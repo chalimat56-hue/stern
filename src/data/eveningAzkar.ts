@@ -9,8 +9,12 @@ export const eveningAzkar: AzkarItem[] = [
     "source": "Источник: АД 3667; САС 2916",
     "arabic": "الْحَمْدُ لِلَّهِ وَحْدَهُ, وَالصَّلَاةُ وَالسَّلَامُ عَلَى مَنْ لَا نَبِيَّ بَعْدَهُ",
     "translit": "Аль-хамду ли-Лляхи вахда-ху ва-с-саляту ва-с-саляму ‘аля ман ля набиййа ба‘да-ху.",
+    "translitEn": "Al-hamdu lillahi wahdahu, wa-s-salatu wa-s-salamu 'ala man la nabiyya ba'dah.",
     "translation": "Хвала одному лишь Аллаху, благословение и мир тому, после кого уже не будет другого пророка.",
-    "note": "Начинайте с хвалы Аллаху и мольбы за Пророка ﷺ."
+    "sourceEn": "Source: AD 3667; SAS 2916",
+    "translationEn": "Praise belongs to Allah alone, and peace and blessings be upon the one after whom there is no prophet.",
+    "note": "Начинайте с хвалы Аллаху и мольбы за Пророка ﷺ.",
+    "noteEn": "Begin with praising Allah and sending blessings upon the Prophet ﷺ."
   },
   {
     "id": 2,

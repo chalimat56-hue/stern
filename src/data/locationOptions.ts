@@ -18,8 +18,8 @@ export type CountryOption = {
 
 export type SupportedLanguage = "ru" | "en";
 
-// Список стран и городов, чтобы сразу дать выбор без ручного ввода
-export const countryOptions: CountryOption[] = [
+// Базовый список стран и городов, русские подписи — для удобства поиска в matchCountryCity
+const baseCountryOptions: CountryOption[] = [
   {
     value: "RU",
     label: "Россия",
@@ -416,6 +416,16 @@ export const countryOptions: CountryOption[] = [
     ],
   },
 ];
+
+// Готовый список с добавленным английским названием (labelEn) и без изменения русских подписей
+export const countryOptions: CountryOption[] = baseCountryOptions.map((country) => ({
+  ...country,
+  labelEn: country.labelEn || country.apiCountry || country.label,
+  cities: country.cities.map((city) => ({
+    ...city,
+    labelEn: city.labelEn || city.value || city.label,
+  })),
+}));
 
 export const normalize = (value: string | undefined | null) => value?.toLowerCase().trim() || "";
 

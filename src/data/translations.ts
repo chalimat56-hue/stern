@@ -38,6 +38,12 @@ export type TranslationContent = {
   azkarEveningLabel: string;
   azkarEveningTitle: string;
   azkarAction: string;
+  azkarListen: string;
+  azkarCopy: string;
+  azkarMark: string;
+  azkarDone: string;
+  azkarRemaining: (count: number) => string;
+  azkarCompleted: string;
   footerBrand: string;
   footerMeta: string;
   morningEyebrow: string;
@@ -86,6 +92,12 @@ export const translations: Record<Language, TranslationContent> = {
     azkarEveningLabel: "Вечер",
     azkarEveningTitle: "Вечерние азкары",
     azkarAction: "Перейти →",
+    azkarListen: "Слушать",
+    azkarCopy: "Копировать",
+    azkarMark: "Отметить чтение",
+    azkarDone: "Готово",
+    azkarRemaining: (count: number) => `Осталось прочитать ${count} раз`,
+    azkarCompleted: "Чтение завершено",
     footerBrand: "noxchiPro • Намаз и азкары",
     footerMeta: "Данные: Aladhan API",
     morningEyebrow: "Утро",
@@ -144,6 +156,12 @@ export const translations: Record<Language, TranslationContent> = {
     azkarEveningLabel: "Evening",
     azkarEveningTitle: "Evening adhkar",
     azkarAction: "Open →",
+    azkarListen: "Listen",
+    azkarCopy: "Copy",
+    azkarMark: "Mark reading",
+    azkarDone: "Done",
+    azkarRemaining: (count: number) => `Remaining ${count} times`,
+    azkarCompleted: "Reading completed",
     footerBrand: "noxchiPro • Prayer times and adhkar",
     footerMeta: "Data: Aladhan API",
     morningEyebrow: "Morning",

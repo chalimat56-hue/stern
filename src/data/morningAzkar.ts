@@ -9,8 +9,12 @@ export const morningAzkar: AzkarItem[] = [
     "source": "Источник: АД 3667; САС 2916",
     "arabic": "الْحَمْدُ لِلَّهِ وَحْدَهُ, وَالصَّلَاةُ وَالسَّلَامُ عَلَى مَنْ لَا نَبِيَّ بَعْدَهُ",
     "translit": "Аль-хамду ли-Лляхи вахда-ху ва-с-саляту ва-с-саляму ‘аля ман ля набиййа ба‘да-ху.",
+    "translitEn": "Al-ḥamdu lillāhi waḥdahū, waṣ-ṣalātu wa-s-salāmu ʿalā man lā nabiyya baʿdahū.",
     "translation": "Хвала одному лишь Аллаху, благословение и мир тому, после кого уже не будет другого пророка.",
-    "note": "Хорошо начинать с хвалы Аллаху и мольбы за Пророка ﷺ."
+    "sourceEn": "Source: AD 3667; SAS 2916",
+    "translationEn": "All praise is due to Allah alone, and blessings and peace be upon the one after whom there is no prophet.",
+    "note": "Хорошо начинать с хвалы Аллаху и мольбы за Пророка ﷺ.",
+    "noteEn": "It is good to begin with praising Allah and sending blessings upon the Prophet ﷺ."
   },
   {
     "id": 2,
@@ -18,8 +22,11 @@ export const morningAzkar: AzkarItem[] = [
     "source": "Источник: Наса’и. ‘Амаль 960; СТ 662",
     "arabic": "أَعُوذُ بِٱللَّهِ مِنَ ٱلشَّيۡطَٰنِ ٱلرَّجِيمِ ﴿ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِنْدَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍۢ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ ﴾",
     "translit": "После слов «А‘узу би-Лляхи мин аш-шайтани р-раджим» прочитайте айат аль-Курси.",
+    "translitEn": "After saying “A‘udhu billahi min ash-shaytan ir-rajim”, recite Ayat al-Kursi.",
     "translation": "«Аллах — нет бога, кроме Него, Живого, Вседержителя... (аль-Бакара, 255)».",
-    "note": "Утреннее чтение защищает от джиннов до вечера."
+    "translationEn": "“Allah—there is no deity except Him, the Ever-Living, the Sustainer... (Al-Baqarah, 255).”",
+    "note": "Утреннее чтение защищает от джиннов до вечера.",
+    "noteEn": "Reciting this in the morning protects from jinn until evening."
   },
   {
     "id": 3,
@@ -27,8 +34,11 @@ export const morningAzkar: AzkarItem[] = [
     "source": "Источник: АД 5082; ССТ 3575",
     "arabic": "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ﴿ قُلْ هُوَ ٱللَّهُ أَحَدٌ ۞ ٱللَّهُ ٱلصَّمَدُ ۞ لَمْ يَلِدْ وَلَمْ يُولَدْ ۞ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ ﴾",
     "translit": "Куль хува-Ллаху ахад, Аллаху ас-Самад, лам ялид ва лам юляд, ва лам якулляху куфуван ахад.",
+    "translitEn": "Qul huwa Allahu ahad, Allahu as-Samad, lam yalid wa lam yulad, wa lam yakun lahu kufuwan ahad.",
     "translation": "«Скажи: Он — Аллах Единый... и нет никого, равного Ему» (аль-Ихляс 1–4).",
-    "note": "Три последние суры утром и вечером — достаточная защита."
+    "translationEn": "“Say: He is Allah, the One... and none is equal to Him” (Al-Ikhlas 1–4).",
+    "note": "Три последние суры утром и вечером — достаточная защита.",
+    "noteEn": "The last three surahs, morning and evening, are sufficient protection."
   },
   {
     "id": 4,
@@ -36,8 +46,11 @@ export const morningAzkar: AzkarItem[] = [
     "source": "Источник: АД 5082; ССТ 3575",
     "arabic": "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ﴿ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ۞ مِن شَرِّ مَا خَلَقَ ۞ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۞ وَمِن شَرِّ ٱلنَّفَّـٰثَٰتِ فِى ٱلْعُقَدِ ۞ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ﴾",
     "translit": "Куль а‘узу би-Рабби ль-фалак мин шарри ма халака... ва мин шарри хасидин иза хасад.",
+    "translitEn": "Qul a‘udhu bi-Rabbi l-falaq min sharri ma khalaq... wa min sharri hasidin idha hasad.",
     "translation": "«Прибегаю к защите Господа рассвета... от зла зависти завистника» (аль-Фаляк 1–5).",
-    "note": "В аяте упомянуты колдуньи, дующие на узлы."
+    "translationEn": "“I seek refuge in the Lord of daybreak... from the evil of an envier when he envies” (Al-Falaq 1–5).",
+    "note": "В аяте упомянуты колдуньи, дующие на узлы.",
+    "noteEn": "The verse mentions sorceresses who blow on knots."
   },
   {
     "id": 5,
@@ -45,8 +58,11 @@ export const morningAzkar: AzkarItem[] = [
     "source": "Источник: АД 5082; ССТ 3575",
     "arabic": "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ﴿ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۞ مَلِكِ ٱلنَّاسِ ۞ إِلَـٰهِ ٱلنَّاسِ ۞ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۞ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ ۞ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ ﴾",
     "translit": "Куль а‘узу би-Рабби н-нaс... мин шарри л-васваси л-ханнас.",
+    "translitEn": "Qul a‘udhu bi-Rabbi n-nas, Maliki n-nas, Ilahi n-nas, min sharri l-waswas il-khannas, alladhi yuwaswisu fi suduri n-nas, mina l-jinnati wa n-nas.",
     "translation": "«Прибегаю к защите Господа людей... от зла искусителя отступающего» (ан-Нас 1–6).",
-    "note": "Искуситель отступает при поминании Аллаха."
+    "translationEn": "“I seek refuge with the Lord of mankind... from the evil of the whisperer who withdraws” (An-Nas 1–6).",
+    "note": "Искуситель отступает при поминании Аллаха.",
+    "noteEn": "The whisperer retreats when Allah is remembered."
   },
   {
     "id": 6,

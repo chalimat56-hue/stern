@@ -5,7 +5,7 @@
 */
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./page.module.css";
 import Topbar from "../../components/Topbar";
 import AzkarCard from "../../components/AzkarCard";
@@ -16,7 +16,19 @@ import { translations, Language } from "../../data/translations";
 const morningList = morningAzkar;
 
 export default function MorningAzkarPage() {
-  const [language, setLanguage] = useState<Language>("en");
+  const getStoredLanguage = () => {
+    if (typeof window === "undefined") return "ru";
+    const saved = localStorage.getItem("preferredLanguage");
+    return saved === "ru" || saved === "en" ? (saved as Language) : "ru";
+  };
+
+  const [language, setLanguage] = useState<Language>(getStoredLanguage);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("preferredLanguage", language);
+    }
+  }, [language]);
   const t = translations[language];
 
   return (
@@ -33,7 +45,7 @@ export default function MorningAzkarPage() {
         {/* Сетка карточек с азкарами */}
         <section className={styles.listSection}>
           {morningList.map((item) => (
-            <AzkarCard key={item.id} item={item} />
+            <AzkarCard key={item.id} item={item} translations={t} language={language} />
           ))}
         </section>
       </main>
