@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Мягкие сумерки перед ночным небом">
+  <defs>
+    <linearGradient id="grad-twilight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2d5b"/>
+      <stop offset="45%" stop-color="#2e4b9a"/>
+      <stop offset="75%" stop-color="#b9638c"/>
+      <stop offset="100%" stop-color="#f1c3b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grad-twilight)"/>
+  <g fill="#f8d8cf" opacity="0.7">
+    <ellipse cx="260" cy="440" rx="160" ry="34"/>
+    <ellipse cx="520" cy="470" rx="170" ry="36"/>
+    <ellipse cx="790" cy="450" rx="190" ry="38"/>
+  </g>
+</svg>

@@ -1,0 +1,132 @@
+/*
+ Luxus NextPrayerCard: Zeigt die nächste Gebetszeit als elegante Karte.
+ Mit sanfter Fade-in Animation und subtiler Hover-Skalierung.
+*/
+
+.card {
+  background: linear-gradient(135deg, rgba(15, 38, 29, 0.85) 0%, rgba(12, 29, 22, 0.9) 100%);
+  border: 1px solid var(--border-medium);
+  border-radius: 0;
+  padding: 28px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  display: grid;
+  gap: 16px;
+  min-height: 240px;
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(32px);
+  animation: fadeInCard 0.8s cubic-bezier(.7,.2,.3,1) forwards;
+}
+
+.card:hover {
+  background: linear-gradient(135deg, rgba(26, 41, 35, 0.8) 0%, rgba(15, 26, 21, 0.9) 100%);
+  border-color: var(--gold-primary);
+  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.22);
+  transform: scale(1.04) translateY(0);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--gold-primary), var(--gold-dark));
+  pointer-events: none;
+}
+
+.cardLabel {
+  font-size: 11px;
+  color: var(--gold-primary);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 36px;
+  color: var(--cream);
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  line-height: 1.1;
+}
+
+.cardTimer {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: var(--gold-primary);
+}
+
+.cardCountdown {
+  font-family: "Inter", monospace;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: var(--cream);
+}
+
+.cardMeta {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 8px;
+  font-family: "Inter", sans-serif;
+  border-top: 1px solid var(--border-light);
+  padding-top: 12px;
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    padding: 20px;
+    gap: 12px;
+  }
+  .cardTitle {
+    font-size: 28px;
+  }
+  .cardTimer {
+    font-size: 16px;
+  }
+  .cardCountdown {
+    font-size: 20px;
+  }
+  .cardMeta {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 16px;
+    gap: 10px;
+  }
+  .cardTitle {
+    font-size: 24px;
+  }
+  .cardTimer {
+    font-size: 14px;
+  }
+  .cardCountdown {
+    font-size: 18px;
+  }
+  .cardMeta {
+    font-size: 10px;
+  }
+}

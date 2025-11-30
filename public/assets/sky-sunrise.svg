@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Тёплый рассвет над горизонтом">
+  <defs>
+    <linearGradient id="grad-sunrise" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d2d63"/>
+      <stop offset="45%" stop-color="#235ba8"/>
+      <stop offset="70%" stop-color="#f2a04c"/>
+      <stop offset="100%" stop-color="#f6ce88"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grad-sunrise)"/>
+  <circle cx="600" cy="520" r="140" fill="#ffdba6" opacity="0.9"/>
+  <rect x="0" y="520" width="1200" height="280" fill="#f7d7a3" opacity="0.6"/>
+</svg>

@@ -1,0 +1,226 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  background: linear-gradient(180deg, rgba(15, 38, 29, 0.92) 0%, rgba(15, 38, 29, 0.82) 100%);
+  border-bottom: 1px solid var(--border-medium);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  gap: 20px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cream);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+  font-family: "Playfair Display", serif;
+}
+
+.brand:hover {
+  color: var(--accent);
+}
+
+.brandMark {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background: linear-gradient(135deg, var(--gold-primary), rgba(212, 175, 55, 0.65));
+  display: inline-block;
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.35);
+  flex-shrink: 0;
+}
+
+.brandName {
+  font-size: 17px;
+  text-transform: none;
+  letter-spacing: 1.4px;
+  font-family: "Playfair Display", serif;
+}
+
+/* Основная навигация */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.navLink {
+  color: var(--text-on-dark);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 0;
+  transition: color 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  border: 1px solid transparent;
+  font-family: "Inter", sans-serif;
+}
+
+.navLink:hover {
+  color: var(--gold-primary);
+  border-color: var(--border-medium);
+  background: rgba(212, 175, 55, 0.12);
+}
+
+/* Контролы */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.langButton {
+  border: 1px solid var(--border-medium);
+  background: rgba(12, 29, 22, 0.9);
+  color: var(--text-on-dark);
+  padding: 9px 14px;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.langButton:hover {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(15, 38, 29, 0.98));
+  box-shadow: 0 14px 30px rgba(212, 175, 55, 0.18);
+  color: var(--gold-primary);
+}
+
+.langButton:active {
+  transform: translateY(0);
+}
+
+/* Гамбургер-кнопка */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin: -8px -8px -8px 0;
+}
+
+.hamburgerLine {
+  width: 24px;
+  height: 2.5px;
+  background: var(--gold-primary);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.hamburgerOpen .hamburgerLine:nth-child(1) {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburgerOpen .hamburgerLine:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerOpen .hamburgerLine:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Оверлей */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  display: block;
+}
+
+/* Мобильные стили */
+@media (max-width: 767px) {
+  .container {
+    padding: 12px 16px;
+    gap: 12px;
+  }
+
+  .brand {
+    font-size: 16px;
+  }
+
+  .brandMark {
+    width: 18px;
+    height: 18px;
+  }
+
+  .brandName {
+    font-size: 16px;
+  }
+
+  .nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+  right: 0;
+  flex-direction: column;
+  gap: 0;
+  background: rgba(12, 29, 22, 0.96);
+  border-bottom: 1px solid var(--border-medium);
+  padding: 12px 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  z-index: 99;
+  }
+
+  .navOpen {
+    max-height: 200px;
+  }
+
+  .navLink {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 0;
+    border-bottom: none;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .navLink:active {
+    background: rgba(212, 175, 55, 0.12);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .langButton {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+
+  .controls {
+    gap: 8px;
+  }
+}

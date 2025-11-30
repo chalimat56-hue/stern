@@ -1,0 +1,124 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px 48px;
+  background:
+    radial-gradient(circle at 20% 18%, rgba(212, 175, 55, 0.12), transparent 30%),
+    radial-gradient(circle at 82% 12%, rgba(212, 175, 55, 0.08), transparent 32%),
+    linear-gradient(135deg, #0c1d16 0%, #113025 48%, #0c1d16 100%);
+}
+
+.cardBoard {
+  width: 100%;
+  max-width: 1120px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: linear-gradient(135deg, rgba(10, 26, 19, 0.9), rgba(15, 38, 29, 0.92));
+  padding: 28px 28px 32px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  display: grid;
+  gap: 18px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.title {
+  margin: 0;
+  font-size: 34px;
+  color: var(--cream);
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.08), rgba(12, 29, 22, 0.94));
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 12px;
+  padding: 18px 16px;
+  display: grid;
+  gap: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--gold-primary), #e8d48a);
+  color: #0f1a15;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 8px 18px rgba(212, 175, 55, 0.25);
+}
+
+.timeToday {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--cream);
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.timeTomorrow {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .cardBoard {
+    padding: 24px 22px 28px;
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 24px 12px 32px;
+  }
+
+  .cardBoard {
+    padding: 20px 16px 24px;
+    gap: 14px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 16px 14px;
+  }
+}

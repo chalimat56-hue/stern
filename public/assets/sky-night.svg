@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Ночное небо со звёздами">
+  <defs>
+    <linearGradient id="grad-night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1228"/>
+      <stop offset="60%" stop-color="#0e1f3c"/>
+      <stop offset="100%" stop-color="#142c52"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grad-night)"/>
+  <circle cx="200" cy="200" r="90" fill="#f2f4fa" opacity="0.85"/>
+  <g fill="#f7f8fb">
+    <circle cx="340" cy="160" r="3"/>
+    <circle cx="480" cy="120" r="2.5"/>
+    <circle cx="620" cy="180" r="2.8"/>
+    <circle cx="780" cy="90" r="3.2"/>
+    <circle cx="940" cy="150" r="2.7"/>
+    <circle cx="1080" cy="210" r="2.3"/>
+    <circle cx="260" cy="310" r="2.9"/>
+    <circle cx="480" cy="290" r="2.6"/>
+    <circle cx="690" cy="260" r="2.4"/>
+    <circle cx="900" cy="320" r="2.5"/>
+    <circle cx="1040" cy="280" r="2.1"/>
+    <circle cx="360" cy="520" r="2.3"/>
+    <circle cx="540" cy="480" r="2.2"/>
+    <circle cx="780" cy="500" r="2.6"/>
+    <circle cx="980" cy="470" r="2.4"/>
+  </g>
+</svg>

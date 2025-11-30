@@ -1,0 +1,37 @@
+.page {
+  min-height: 100vh;
+  background: transparent;
+  color: var(--text-on-dark);
+  position: relative;
+}
+
+/* Glass-Overlay Effekt */
+.page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 12%, rgba(212, 175, 55, 0.07), transparent 26%),
+    radial-gradient(circle at 80% 8%, rgba(212, 175, 55, 0.06), transparent 30%),
+    linear-gradient(135deg, rgba(15, 38, 29, 0.7) 0%, rgba(12, 29, 22, 0.8) 50%, rgba(15, 38, 29, 0.7) 100%);
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 720px) {
+  .main {
+    gap: 36px;
+  }
+}

@@ -1,0 +1,269 @@
+.section {
+  padding: 36px 16px 48px;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+  background: linear-gradient(135deg, rgba(12, 29, 22, 0.9) 0%, rgba(17, 48, 36, 0.85) 100%);
+  border-radius: 0;
+  box-shadow: var(--shadow-medium);
+  border: 1px solid var(--border-medium);
+}
+
+/* Header */
+.headRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.title {
+  margin: 8px 0 0 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1.2;
+  font-family: "Playfair Display", serif;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+/* Karte */
+.card {
+  background: linear-gradient(135deg, rgba(15, 38, 29, 0.8), rgba(12, 29, 22, 0.92));
+  border: 1px solid var(--border-light);
+  border-radius: 0;
+  padding: 18px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: default;
+  min-height: 130px;
+  justify-content: space-between;
+}
+
+.card:hover {
+  background: rgba(5, 7, 14, 0.88);
+  border-color: var(--border-strong);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.32);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.prayerChip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 11px;
+  color: #0f1a15;
+  background: linear-gradient(135deg, var(--gold-primary), #f1dfaa);
+  box-shadow: 0 10px 22px rgba(212, 175, 55, 0.28);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  font-family: "Inter", sans-serif;
+  border: 1px solid var(--border-medium);
+}
+
+.timeBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.timeLine {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.time {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--cream);
+  letter-spacing: 0.5px;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+.timeTomorrow {
+  font-size: 12px;
+  color: var(--text-secondary);
+  letter-spacing: 0.25px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 32px 16px 40px;
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card {
+    padding: 14px 12px;
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 36px 16px;
+    gap: 24px;
+  }
+
+  .headRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .card {
+    padding: 12px 10px;
+    min-height: 110px;
+  }
+
+  .prayerChip {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .time {
+    font-size: 18px;
+  }
+
+  .timeTomorrow {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 520px) {
+  .section {
+    padding: 32px 14px;
+    gap: 20px;
+  }
+
+  .eyebrow {
+    font-size: 9px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .card {
+    padding: 12px 10px;
+    min-height: 110px;
+  }
+
+  .prayerChip {
+    font-size: 9px;
+    padding: 4px 8px;
+  }
+
+  .time {
+    font-size: 18px;
+  }
+
+  .timeTomorrow {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .section {
+    padding: 28px 12px;
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .card {
+    padding: 12px 10px;
+    min-height: 100px;
+  }
+
+  .prayerChip {
+    font-size: 8px;
+    padding: 3px 6px;
+  }
+
+  .time {
+    font-size: 16px;
+  }
+
+  .timeTomorrow {
+    font-size: 9px;
+  }
+}

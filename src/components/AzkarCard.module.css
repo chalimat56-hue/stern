@@ -1,0 +1,160 @@
+.card {
+  background: rgba(26, 41, 35, 0.5);
+  border: 1px solid var(--border-light);
+  border-radius: 0;
+  padding: 20px;
+  display: grid;
+  gap: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dekoratives Element links */
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--gold-primary), var(--gold-dark));
+  pointer-events: none;
+}
+
+.repeat {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 8px 12px;
+  border-radius: 0;
+  background: rgba(212, 175, 55, 0.12);
+  color: var(--gold-primary);
+  font-weight: 700;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: fit-content;
+  border: 1px solid var(--border-medium);
+}
+
+.repeatNote {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: none;
+  letter-spacing: 0.2px;
+}
+
+.repeatDone {
+  background: rgba(26, 77, 46, 0.16);
+  color: var(--cream);
+  border-color: var(--gold-primary);
+}
+
+.source {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.arabic {
+  font-family: "Amiri", "Noto Naskh Arabic", system-ui, -apple-system, sans-serif;
+  font-size: 26px;
+  line-height: 1.8;
+  color: var(--cream);
+  letter-spacing: 0.2px;
+  text-rendering: optimizeLegibility;
+  margin: 8px 0;
+}
+
+.translit {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.translation {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.button {
+  border: none;
+  background: linear-gradient(135deg, var(--gold-primary), var(--gold-light));
+  color: #0f1a15;
+  padding: 10px 16px;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(212, 175, 55, 0.25);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.copyButton {
+  background: rgba(212, 175, 55, 0.12);
+  color: var(--gold-primary);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--border-light);
+}
+
+.copyButton:hover {
+  background: rgba(212, 175, 55, 0.18);
+  border-color: var(--gold-primary);
+}
+
+.countButton {
+  background: rgba(26, 77, 46, 0.2);
+  color: var(--cream);
+  border: 1px solid var(--border-medium);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.countButton:hover {
+  background: rgba(26, 77, 46, 0.32);
+  border-color: var(--gold-primary);
+}
+
+.countButton:active {
+  transform: translateY(0);
+}
+
+.note {
+  padding: 12px 14px;
+  border-radius: 0;
+  background: rgba(212, 175, 55, 0.08);
+  border-left: 3px solid var(--gold-primary);
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  margin-top: 8px;
+}

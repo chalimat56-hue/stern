@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Закат с мягкими оттенками">
+  <defs>
+    <linearGradient id="grad-sunset" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c1b47"/>
+      <stop offset="40%" stop-color="#5f2a6d"/>
+      <stop offset="75%" stop-color="#f07c44"/>
+      <stop offset="100%" stop-color="#f5c581"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grad-sunset)"/>
+  <circle cx="870" cy="360" r="120" fill="#f5e1a4" opacity="0.85"/>
+  <g fill="#f9d4aa" opacity="0.8">
+    <ellipse cx="320" cy="420" rx="140" ry="28"/>
+    <ellipse cx="520" cy="460" rx="160" ry="30"/>
+    <ellipse cx="690" cy="430" rx="170" ry="34"/>
+  </g>
+</svg>

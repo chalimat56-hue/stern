@@ -1,0 +1,142 @@
+.panel {
+  background: rgba(5, 9, 16, 0.65);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 52px 0;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.formBox {
+  width: 100%;
+  max-width: 720px;
+  background: rgba(10, 16, 28, 0.78);
+  border: 1px solid rgba(99, 224, 255, 0.32);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 20px 48px rgba(0, 8, 24, 0.45);
+  display: grid;
+  gap: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.formHead {
+  display: grid;
+  gap: 4px;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  color: #e8edf8;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e8edf8;
+}
+
+.select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(99, 224, 255, 0.32);
+  background: rgba(12, 18, 30, 0.8);
+  font-size: 14px;
+  color: #e8edf8;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(99, 224, 255, 0.25);
+  background: rgba(12, 18, 30, 0.95);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(99, 224, 255, 0.12);
+  color: #e8edf8;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #63e0ff, #40c1ff);
+  color: #062035;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+  box-shadow: 0 16px 40px rgba(0, 8, 24, 0.35);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 20px 48px rgba(0, 8, 24, 0.42);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 0 12px 32px rgba(0, 8, 24, 0.25);
+}
+
+.hint {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .panel {
+    padding: 36px 0;
+  }
+
+  .formBox {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .formHead {
+    text-align: center;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hint {
+    font-size: 13px;
+  }
+}
