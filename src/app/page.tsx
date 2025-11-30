@@ -227,7 +227,7 @@ export default function Home() {
               if (matched.city) {
                 setSelectedCity(matched.city);
                 const label = buildLabel(matched.country, matched.city);
-                await loadForLocation(latitude, longitude, geoMatch.timezone || fallbackPlace.timezone, label);
+                await loadForLocation(latitude, longitude, geoMatch?.timezone || fallbackPlace.timezone, label);
                 setStatusLabel(label);
                 setGeoDone(true);
                 return;
